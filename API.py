@@ -5,7 +5,7 @@ import json
 err = "unable to fetch restaurant data"
 
 
-def get_restaurant_data(postcode):
+def get_rest_data(postcode):
     url = f"https://uk.api.just-eat.io/discovery/uk/restaurants/enriched/bypostcode/{postcode}"
     #check why this header works
     headers = {
@@ -26,9 +26,9 @@ def save_json(data, filename):
 
 if __name__ == "__main__":
     postcode = input("Enter postcode: ")
-    restaurant_data = get_restaurant_data(postcode)
+    rest_data = get_rest_data(postcode)
 
-    if restaurant_data:
-        save_json(restaurant_data, f'restaurant_data{postcode}.json')
+    if rest_data:
+        save_json(rest_data, f'restaurant_data{postcode}.json')
     else:
         print(err)
