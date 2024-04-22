@@ -24,11 +24,3 @@ def save_json(data, filename):
     with open(filename, 'w') as j_file:
         json.dump(data, j_file, indent=4)
 
-if __name__ == "__main__":
-    postcode = input("Enter postcode: ")
-    rest_data = get_rest_data(postcode)
-
-    if rest_data:
-        save_json(rest_data, f'restaurant_data{postcode}.json')
-    else:
-        print(err)
