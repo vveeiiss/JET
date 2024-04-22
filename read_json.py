@@ -26,7 +26,7 @@ def get_data(file_path):
 
 
 if __name__ == "__main__":
-    file_path = '/Users/melikadavoodzade/Documents/GitHub/datamining-assigment/DM/JET/restaurant_dataNE97TY.json'  # Replace 'restaurant_data.json' with the path to your JSON file
+    file_path = '/Users/melikadavoodzade/Documents/GitHub/datamining-assigment/DM/JET/restaurant_data.json'  # Replace 'restaurant_data.json' with the path to your JSON file
     restaurants = get_data(file_path)
     if restaurants:
         print("Restaurant data retrieved successfully!")
