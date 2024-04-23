@@ -26,7 +26,7 @@ def get_data(file_path):
 
 
 if __name__ == "__main__":
-    file_path = 'FILE_PATH' #replace with file path
+    file_path = 'restaurant_data.json' #replace with file path
     restaurants = get_data(file_path)
     if restaurants:
         print("data retrieved successfully")
