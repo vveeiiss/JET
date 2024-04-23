@@ -26,14 +26,14 @@ def get_data(file_path):
 
 
 if __name__ == "__main__":
-    file_path = '/Users/melikadavoodzade/Documents/GitHub/datamining-assigment/DM/JET/restaurant_data.json'  # Replace 'restaurant_data.json' with the path to your JSON file
+    file_path = 'FILE_PATH' #replace with file path
     restaurants = get_data(file_path)
     if restaurants:
-        print("Restaurant data retrieved successfully!")
+        print("data retrieved successfully")
 
-        csv_file_path = f'restaurants.csv'  # Specify the path for the CSV file
+        csv_file_path = f'restaurants.csv'
         write_to_csv(csv_file_path, restaurants)
-        print("Restaurant data written to CSV file:", csv_file_path)
+
     else:
-        print("Error: No 'restaurants' data found in the JSON file.")
+        print("no data found")
 
